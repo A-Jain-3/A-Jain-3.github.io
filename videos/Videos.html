@@ -56,11 +56,48 @@
     	padding-bottom: 10px;
     }
 
-    .video-1 {
-      padding-top: 100px;
-      padding-bottom: 100px;
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      grid-auto-rows: minmax(100px, auto);
     }
 
+    .video-1 {
+      padding: 75px 75px;
+      grid-column: 1/2;
+      grid-row: 1;
+    }
+
+    .video-1-desc {
+      padding: 75px 75px;
+      grid-column: 2/4;
+      grid-row: 1;
+    }
+
+    .video-2-desc {
+      padding: 75px 75px;
+      grid-column: 1/2;
+      grid-row: 2;
+    }
+
+    .video-2 {
+      padding: 75px 75px;
+      grid-column: 2/4;
+      grid-row: 2;
+    }
+
+    .video-3 {
+      padding: 75px 75px;
+      grid-column: 1/2;
+      grid-row: 3;
+    }
+
+    .video-3-desc {
+      padding: 75px 75px;
+      grid-column: 2/4;
+      grid-row: 3;
+    }
 
     </style>
 </head>
@@ -86,6 +123,34 @@
 
      <div class="video-1">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/NTnuETOQb9A?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+
+     <div class="video-1-desc">
+      <p>This is a video about the Habitat 67 in Montreal. I edited it AND filmed it! test test test test test test test test 
+      test test test test test test test test test test test test test test test test test test test test test test test test 
+      test test test test test test test test test test test test test test test test test test test test test test test test 
+      test test test test test test test test test test test test test test test test test test test test test test test test 
+      test test test test test test test test test test test test test test test test test test test test test test test </p>
+     </div>
+
+     <div class="video-2">
+      <video width="560" height="315" controls>
+       <source src="Website1.mp4" type="video/mp4">
+      </video>
+     </div>
+
+     <div class="video-2-desc">
+      <p>This is the official introduction to the website so it's a MUST WATCH.</p>
+     </div>
+
+     <div class="video-3">
+      <video width="560" height="315" controls>
+       <source src="Cats.mp4" type="video/mp4">
+      </video>
+     </div>
+
+     <div class="video-3-desc">
+      <p>This video is about cats and is edited by me. :)</p>
      </div>
 
      </div>
