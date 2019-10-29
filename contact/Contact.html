@@ -144,11 +144,11 @@
     <h1>Contact Me!</h1>
     <div class="border"></div>
     <form class="contact-form" action="https://formspree.io/anshika.jain0508@gmail.com" method="POST">
-        <input type="text" class="contact-form-text" placeholder="Your Name">
-        <input type="email" class="contact-form-text" placeholder="Your Email">
-        <input type="text" class="contact-form-text" placeholder="Subject">
-        <textarea class="contact-form-text" placeholder="Your Message"></textarea>
-        <input class="contact-form-button" type="submit" value="Send!" onclick="alert('Email Me!')" />
+        <input name="name" type="text" class="contact-form-text" placeholder="Your Name">
+        <input name="_replyto" type="email" class="contact-form-text" placeholder="Your Email">
+        <input name="subject" type="text" class="contact-form-text" placeholder="Subject">
+        <textarea name="message" class="contact-form-text" placeholder="Your Message"></textarea>
+        <input name="submit" class="contact-form-button" type="submit" value="Send!" onclick="alert('Email Me!')" />
     </form>
   </div>
 
